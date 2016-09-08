@@ -1,0 +1,23 @@
+<!doctype=html>
+Welcome to Oracle HCM.
+<br>
+
+<form action='addnewemp' method="POST">
+Name: 	 <input type="text" name="name"></input><br>
+Address: <input type="text" name="address"></input><br>
+SSN:     <input type="text" name="ssn"></input><br>
+Salary   <input type="text" name="salary"></input><br>
+<input type="submit"></input>
+</form>
+
+
+{% for item in items %}
+<h3>{{item.name}}</h3>
+<p> {{item.address}}<p>
+<p> {{item.SSN}}<p>
+<p> {{item.Salary}}<p>
+
+{% endfor %}
+
+
+</html>
